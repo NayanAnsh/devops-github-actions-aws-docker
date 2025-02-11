@@ -1,0 +1,22 @@
+networks:
+  app-network:
+    driver: bridge
+services:
+  backend:
+      build: ./backend
+      env_file: ".env"
+      ports:
+        - "3000:3000"
+      networks:
+        - app-network
+      restart: always  
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:3000

@@ -1,0 +1,85 @@
+ /* Reset some default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styling with a gradient background */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Container for the login form */
+  .login-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+
+  /* Login form heading */
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  /* Styling for the input fields */
+  .login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  /* Styling for the button */
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+
+  .login-form button:hover {
+    background: #556cd6;
+  }
+
+  /* Styling for the options (remember me and forgot password) */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+  }
+
+  .options a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .options a:hover {
+    text-decoration: underline;
+  }

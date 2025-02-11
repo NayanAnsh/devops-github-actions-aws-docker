@@ -1,0 +1,62 @@
+   /* Reset some default browser styles */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Apply a smooth, full-screen gradient background */
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #FF6B6B, #556270);
+    background-size: cover;
+  }
+
+  /* Centered container with a light overlay for readability */
+  .container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+
+  /* Beautiful heading style */
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1px;
+  }
+
+  /* Subtitle or description text */
+  p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  /* A call-to-action button style */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Hover effects for the button */
+  .btn:hover {
+    background-color: #ff3b3b;
+    transform: scale(1.05);
+  }
