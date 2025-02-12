@@ -1,0 +1,65 @@
+{
+    "family": "tesk-example",
+    "containerDefinitions": [
+        {
+            "name": "backend-image",
+            "image": "058264243158.dkr.ecr.ap-south-1.amazonaws.com/devops/github-actions:7971c5b0700376a17426554e4d8c5c77234b1709",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "3000",
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                    "name": "PASSWORD",
+                    "value": "PASSWORD"
+                },
+                {
+                    "name": "USERNAME",
+                    "value": "NAYAN"
+                },
+                {
+                    "name": "SECRET_MESSAGE",
+                    "value": "ENV FILE IS WORKING ,YOUR PASSWORD IS CORRECT"
+                }
+            ],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/t3/tesk-example",
+                    "mode": "non-blocking",
+                    "awslogs-create-group": "true",
+                    "max-buffer-size": "25m",
+                    "awslogs-region": "ap-south-1",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            },
+            "systemControls": []
+        }
+    ],
+    "taskRoleArn": "arn:aws:iam::058264243158:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::058264243158:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "placementConstraints": [],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "enableFaultInjection": false
+}
