@@ -45,8 +45,7 @@ Note: The link may not work as the architecture might be scaled down to zero to 
 5. **Load Balancing & Scaling**: ALB distributes traffic, and Auto Scaling ensures availability.
 
 ## Badges & Shields
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/your-repo-name/ci-cd-pipeline.yml)
-![Docker Image Size](https://img.shields.io/docker/image-size/your-docker-image/latest)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NayanAnsh/devops-github-actions-aws-docker/.github%2Fworkflows%2Faws.yml)
 
 ## Notes
 - No local setup instructions are provided since deployment is automated.
