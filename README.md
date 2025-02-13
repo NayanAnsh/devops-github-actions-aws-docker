@@ -29,8 +29,8 @@ The app requires an `.env` file with the following:
 ```
 PORT={NUMBER}  
 SECRET_MESSAGE={MESSAGE TO DISPLAY}  
-USERNAME={YOUR_USERNAME}  
-PASSWORD={YOUR_PASSWORD}  
+USERNAME={NAYAN}  
+PASSWORD={PASSWORD}  
 ```
 
 ## Deployment & Live Website
