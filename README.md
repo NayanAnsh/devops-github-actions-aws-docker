@@ -34,7 +34,7 @@ PASSWORD={PASSWORD}
 ```
 
 ## Deployment & Live Website
-[Live Website](http://alb-t3-mid-984506528.ap-south-1.elb.amazonaws.com/) 
+[project URL](http://alb-t3-mid-984506528.ap-south-1.elb.amazonaws.com/) 
 Note: The link may not work as the architecture might be scaled down to zero to save costs
 
 ## CI/CD Workflow
